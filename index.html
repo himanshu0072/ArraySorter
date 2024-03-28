@@ -8,6 +8,7 @@
     <meta name="description"
         content="It is a platform which sort the array in ascending or descending order as per your commands">
     <link href="/style.css" rel="styleshet" type="text/css">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
     <!-- Tailwind css -->
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
@@ -47,26 +48,33 @@
                     <div class="mt-6 flex max-w-md max-w-sm gap-x-4">
                         <button type="submit"
                             class="min-w-0 flex-auto rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
-                            onclick="selectData()">Sort
+                            onclick="sortAscending()">Sort
                             In Ascending Order</button>
-                        <button type="submit"
-                            class="min-w-0 flex-auto rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500">Sort
+                        <button type=" submit"
+                            class="min-w-0 flex-auto rounded-md bg-indigo-500 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
+                            onclick="sortDescending()">Sort
                             In Descending Order</button>
                     </div>
                 </div>
                 <dl class="grid grid-cols-1 gap-x-8 gap-y-10 sm:grid-cols-2 lg:pt-2">
                     <div class="flex flex-col items-start">
                         <dt class="mt-4 font-semibold text-white">Sorted Array</dt>
-                        <dd class="mt-2 leading-7 text-gray-400">Your Sorted array:<br>[1,2,3,4,5,6,7,8,9,10]</dd>
+                        <dd class="mt-2 leading text-gray-400 ">Your Sorted array:<br>
+                            <h1><span class="font-semibold" id="sortedOutput"></span></h1>
+                        </dd>
+
                     </div>
                     <div class="flex flex-col items-start">
                         <dt class="mt-4 font-semibold text-white">See other projects</dt>
                         <dt class="mt-2 leading-7 text-gray-400"><a
-                                href="https://www.linkedin.com/in/himanshu-prajapati-331586207/">LinkedIn</a> </dt>
+                                href="https://www.linkedin.com/in/himanshu-prajapati-331586207/"
+                                target="_blank">LinkedIn</a> </dt>
                         <dt class="mt-2 leading-7 text-gray-400"><a
-                                href="https://connectit000.000webhostapp.com/himanshu/">Portfolio</a> </dt>
+                                href="https://connectit000.000webhostapp.com/himanshu/" target="_blank">Portfolio</a>
+                        </dt>
                         <dt class="mt-2 leading-7 text-gray-400"> <a
-                                href="https://curiocodesolution.vercel.app/Applynow.jsx">Want Internship ? click here
+                                href="https://curiocodesolution.vercel.app/Applynow.jsx" target="_blank">Want Internship
+                                ? click here
                                 for referrel</a> </dt>
                     </div>
                 </dl>
@@ -81,7 +89,10 @@
 
 
 
-    <script src="./script.js"></script>
+    <script src="./script.js">
+
+
+    </script>
 </body>
 
 </html>
