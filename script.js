@@ -3,7 +3,9 @@ function sortAscending() {
     .getElementById("arrays")
     .value.split(",")
     .map((item) => Number(item.trim()));
-  let sortedArray = inputArray.sort((a, b) => a - b);
+
+  let sortedArray = inputArray.sort((a, b) => a - b); // sorting
+
   document.getElementById("sortedOutput").textContent =
     "{" + sortedArray.toString() + "}";
 }
@@ -13,7 +15,9 @@ function sortDescending() {
     .getElementById("arrays")
     .value.split(",")
     .map((item) => Number(item.trim()));
-  let sortedArray = inputArray.sort((a, b) => b - a);
+
+  let sortedArray = inputArray.sort((a, b) => b - a); // sorting
+
   document.getElementById("sortedOutput").textContent =
     "{" + sortedArray.toString() + "}";
 }
